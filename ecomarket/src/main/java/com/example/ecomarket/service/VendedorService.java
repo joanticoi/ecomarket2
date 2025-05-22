@@ -1,12 +1,18 @@
 package com.example.ecomarket.service;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
+import jakarta.transaction.Transactional;
 import com.example.ecomarket.model.Vendedor;
 import com.example.ecomarket.repository.VendedorRepository;
 
+
+import java.util.List;
+
+@Service
+@Transactional
 public class VendedorService {
      @Autowired
     private VendedorRepository vendedorRepository;
