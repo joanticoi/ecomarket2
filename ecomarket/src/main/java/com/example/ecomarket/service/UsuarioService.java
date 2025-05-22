@@ -1,7 +1,7 @@
-package com.example.Ecomarket.service;
+package com.example.ecomarket.service;
 
-import com.example.Ecomarket.model.Usuario;
-import com.example.Ecomarket.repository.UsuarioRepository;
+import com.example.ecomarket.model.Usuario;
+import com.example.ecomarket.repository.UsuarioRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
