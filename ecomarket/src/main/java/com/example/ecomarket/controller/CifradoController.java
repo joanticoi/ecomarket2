@@ -21,4 +21,15 @@ public class CifradoController {
     public String desencriptar(@RequestBody CifradoRequest request) {
         return cifradoService.descifrar(request.getTexto(), request.getClave());
     }
+
+    @controller
+    @RequestMapping("/terms")
+    public class TermsController {
+        @getmapping 
+        public responseEntity<String>  getTermsAndConditions(){
+            String terms = "Terminos y condiciones del servicio"
+            return responseEntity.ok(terms);
+        }
+    }
+
 }
